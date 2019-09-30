@@ -30,6 +30,7 @@ int main(int argc, char **argv)
 
     char *memLeak = (char *)calloc(1, 100);
     strcpy(memLeak, "I am your intended memory leak");
+    delete memLeak;
 
     return 0;
 }
